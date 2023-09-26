@@ -24,3 +24,7 @@ with open('expenses.txt', 'r') as f:
         name, expense = line.split()
         total_cost = total_cost + float(expense)
 print(f'total_cost = {total_cost}')
+
+
+with open('expenses.txt','a') as f:
+    f.write(f'Total Cost = {str(total_cost)}')
